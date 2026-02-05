@@ -26,6 +26,9 @@ form input {
   width: 100%;
   box-sizing: border-box;
 }
+form button:hover {
+  background: #14a83e;
+}
 </style>
 </head>
 <body>
@@ -57,12 +60,22 @@ form input {
 <input name="Запчасть" placeholder="Запчасть" required>
 <input name="Телефон" placeholder="Телефон" required><br><br>
 <label style="font-size:14px; display:block; margin:10px 0;">
-<input type="checkbox" required>
+<input type="checkbox" required
+style="transform: scale(1.8); margin-right:10px;">
 Я согласен(а) с обработкой персональных данных и принимаю
 <a href="#policy" onclick="event.stopPropagation();">Политику конфиденциальности</a>
 </label>
-<button type="submit">ОТПРАВИТЬ</button>
-</form>
+form button {
+  width: 100%;
+  background: #1ecb4f;
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: bold;
+  padding: 20px;
+  border-radius: 14px;
+  border: none;
+  cursor: pointer;
+}
 </div>
 
 <div class="section" id="policy">
